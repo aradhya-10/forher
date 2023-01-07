@@ -1,24 +1,19 @@
-// import logo from './logo.svg';
-import './App.css';
+import {AddPost, Footer, Form, Navbar} from "./components"
+import sheBuilds from "./images/sheBuilds.png" 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+		<div className="min-h-screen w-full overflow-x-hidden">
+		<div className="w-full overflow-hidden absolute h-screen top-0">
+		<img src={sheBuilds} className="w-screen overflow-hidden object-fill"/>
+		</div>
+		{/* <AddPost/> */}
+		<div className="">
+		<Navbar />
+		<Form />
+		<Footer/>
+		</div>
+		</div>
   );
 }
 
